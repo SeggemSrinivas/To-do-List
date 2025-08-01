@@ -1,91 +1,194 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #1e1e2f;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 100vh;
-  padding-top: 50px;
-  margin: 0;
-}
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      padding-top: 50px;
+      margin: 0;
+    }
 
-.container {
-  background: #2e2e48;
-  padding: 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
+    .container {
+      background: #2e2e48;
+      padding: 30px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
 
-h1 {
-  text-align: center;
-  color: #ffc107;
-}
+    h1 {
+      text-align: center;
+      color: #ffc107;
+    }
 
-.input-container {
-  display: flex;
-  margin-bottom: 20px;
-}
+    .input-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
 
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 5px 0 0 5px;
-  border: none;
-  outline: none;
-}
+    input[type="text"] {
+      flex: 1;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px 0 0 5px;
+      border: none;
+      outline: none;
+    }
 
-button {
-  padding: 10px 15px;
-  background-color: #00bcd4;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
+    button {
+      padding: 10px 15px;
+      background-color: #00bcd4;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+    }
 
-button:hover {
-  background-color: #0097a7;
-}
+    button:hover {
+      background-color: #0097a7;
+    }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+    ul {
+      list-style: none;
+      padding: 0;
+    }
 
-li {
-  background: #3b3b5c;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    li {
+      background: #3b3b5c;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
-li.completed {
-  text-decoration: line-through;
-  opacity: 0.6;
-}
+    li.completed {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
 
-li span {
-  cursor: pointer;
-}
+    li span {
+      cursor: pointer;
+    }
 
-.delete {
-  background: #e53935;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
+    .delete {
+      background: #e53935;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
 
-.delete:hover {
-  background: #c62828;
-}
+    .delete:hover {
+      background: #c62828;
+    }
+
+    /* Media Queries */
+
+    /* Extra Large Devices (Desktops > 1200px) */
+    @media (min-width: 1200px) {
+      .container {
+        max-width: 450px;
+      }
+    }
+
+    /* Large Devices (Laptops: 992px to 1199px) */
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .container {
+        max-width: 420px;
+        padding: 25px;
+      }
+    }
+
+    /* Medium Devices (Tablets: 768px to 991px) */
+    @media (min-width: 768px) and (max-width: 991px) {
+      .container {
+        max-width: 90%;
+        padding: 20px;
+      }
+
+      input[type="text"] {
+        font-size: 0.95rem;
+      }
+
+      button {
+        font-size: 0.95rem;
+        padding: 10px 12px;
+      }
+    }
+
+    /* Small Devices (Landscape Phones: 576px to 767px) */
+    @media (min-width: 576px) and (max-width: 767px) {
+      .container {
+        max-width: 95%;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      input[type="text"] {
+        font-size: 0.9rem;
+      }
+
+      button {
+        font-size: 0.9rem;
+        padding: 9px 10px;
+      }
+
+      li {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Extra Small Devices (Phones < 576px) */
+    @media (max-width: 575px) {
+      body {
+        padding-top: 30px;
+        align-items: flex-start;
+      }
+
+      .container {
+        width: 90%;
+        padding: 15px;
+        box-shadow: none;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      .input-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      input[type="text"] {
+        border-radius: 5px;
+        font-size: 0.9rem;
+      }
+
+      button {
+        border-radius: 5px;
+        font-size: 0.9rem;
+        padding: 10px;
+      }
+
+      li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .delete {
+        align-self: flex-end;
+      }
+    }
